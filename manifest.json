@@ -1,0 +1,16 @@
+{
+  "name": "Facebook Peace",
+  "description": "Remove Facebook commenting, for a better world.",
+  "version": "2.0",
+  "permissions": [
+    "tabs", "*://*.facebook.com/*"
+  ],
+  "content_scripts": [{
+    "js": ["background.js"],
+    "matches": ["https://*.facebook.com/*"]
+  }],
+  "icons": { "16": "enso16.png",
+           "48": "enso48.png",
+          "128": "enso128.png" },
+  "manifest_version": 2
+}
